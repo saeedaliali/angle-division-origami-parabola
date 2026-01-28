@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origami-Parabola Method - Coming Soon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+        
+        .header {
+            background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+            color: white;
+            padding: 40px 20px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.4rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .content {
+            padding: 50px 40px;
+        }
+        
+        .message {
+            font-size: 1.8rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+        
+        .highlight {
+            color: #4b6cb7;
+            font-weight: 600;
+        }
+        
+        .status {
+            background-color: #f8f9fa;
+            border-left: 5px solid #4b6cb7;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: left;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .status h2 {
+            color: #182848;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+        
+        .status p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            color: #555;
+        }
+        
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(75, 108, 183, 0.3);
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(90deg, #8e9eab 0%, #eef2f3 100%);
+            color: #333;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            .message { font-size: 1.5rem; }
+            .content { padding: 40px 25px; }
+            .links { flex-direction: column; align-items: center; }
+            .btn { width: 100%; max-width: 300px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Origami-Parabola Method</h1>
+            <div class="subtitle">Interactive Geometric Construction for Angle Division</div>
+        </div>
+        
+        <div class="content">
+            <div class="message">
+                The interactive model for the <span class="highlight">Origami-Parabola Method</span> will be available soon.
+            </div>
+            
+            <div class="status">
+                <h2>📢 Current Status</h2>
+                <p>
+                    The full interactive GeoGebra demonstration is currently being prepared for release alongside the associated research paper. 
+                    This page will be updated automatically once the complete model is published. We appreciate your patience and interest in this novel geometric construction.
+                </p>
+            </div>
+            
+            <div class="links">
+                <a href="https://github.com/saeedaliali/angle-division-origami-parabola" class="btn" target="_blank">View Repository on GitHub</a>
+                <a href="https://saeedaliali.github.io/angle-trisection-demo/" class="btn btn-secondary" target="_blank">Explore Trisection Demo</a>
+                <a href="https://saeedaliali.github.io/angle-division-general/" class="btn btn-secondary" target="_blank">Explore General n-Section Demo</a>
+            </div>
+            
+            <div class="footer">
+                <p>© 2025 Aliakbar Kavosi | This work is part of a research series on geometric angle division.</p>
+                <p>Last updated: <span id="currentDate"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add current date to footer
+        const now = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('currentDate').textContent = now.toLocaleDateString('en-US', options);
+        
+        // Simple fade-in animation
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.container').style.opacity = '0';
+            document.querySelector('.container').style.transition = 'opacity 0.8s ease';
+            
+            setTimeout(function() {
+                document.querySelector('.container').style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
