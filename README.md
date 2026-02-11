@@ -9,7 +9,7 @@ Explore the full series of interactive constructions that accompany this researc
     *The core model for dividing an angle into three equal parts.*
 -   **🔢 Generalized n-Section:** [Live Demo](https://saeedaliali.github.io/angle-division-general)
     *Extends the method to divide an angle into any `n` equal parts.*
--   **✏️ Classical Construction (Euclidean Tools):** [Live Demo](https://saeedaliali.github.io/angle-division-origami-parabola) *(Coming Soon)*
+-   **✏️ Classical Construction (Euclidean Tools):** [Live Demo](https://saeedaliali.github.io/angle-division-origami-parabola) 
     *A practical implementation using straightedge and compass concepts.*
 	
 ## 📖 Related Academic Papers
